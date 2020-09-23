@@ -91,7 +91,7 @@ function removeLastFlavor(originalFlavors){
 
 }
 
-removeLastFlavor(originalFlavors)
+console.log(removeLastFlavor(originalFlavors));
 
 /* Task 4: Write a function that returns a flavor at a given index in the array.
 
