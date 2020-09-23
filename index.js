@@ -168,11 +168,21 @@ DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem.
 
 hint - you can use the .includes method to help you solve this */
 
-function filterByWord(/*code here*/){
 
-    /*code here*/
 
-}
+function filterByWord(array, string){
+
+    let filteredArray = [];
+    for (let index = 0; index < array.length; index++) {
+    
+        if (element[index].includes("Chocolate")){
+          filteredArray.push(array[index])
+        }
+        }
+    return filteredArray
+    }
+    console.log(filterByWord(originalFlavors, "Chocolate"))
+
 
 
 
