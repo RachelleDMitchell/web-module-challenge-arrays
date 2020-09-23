@@ -140,7 +140,7 @@ Your function should accept:
 and should return a new array that is identical to the old array. You can name the new array however you'd like. */
 
 
-console.log(copy(originalFlavors))
+
 
 function copy(originalFlavors, newFlavors) {
      newFlavors = [...originalFlavors]
