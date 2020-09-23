@@ -71,7 +71,7 @@ function addFlavor(originalFlavors){
    return originalFlavors
 
 }
-addFlavor(originalFlavors);
+console.log(addFlavor(originalFlavors));
 
 /* Task 3: Houston, we have a problem! There are now 32 flavors in the array! Your task is to 
 remove an item from the end of the array. 
