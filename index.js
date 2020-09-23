@@ -47,10 +47,10 @@ function is31Flavors(originalFlavors){
     console.log(originalFlavors.length)
      if (originalFlavors.length === 31){
        return true;
-     }
+     } else
      return false;
     }
-    is31Flavors(originalFlavors);
+    console.log(is31Flavors(originalFlavors));
 
 /* Task 2: Corporate has come to you with an idea for a new flavor: Rainbow Sherbert! 
 They think this will be a game changer. You need to modify the array to include this flavor. 
@@ -103,9 +103,9 @@ Your function should accept:
 For example, getFlavorByIndex(originalFlavors, 2) would return "Black Walnut", assuming Rainbow Sherbert 
 has been added successfully. */
 
-function getFlavorByIndex(/*code here*/){
+function getFlavorByIndex(originalFlavors){
 
-    /*code here*/
+    console.log(originalFlavors[2])
 
 }
 
@@ -125,11 +125,8 @@ Hint: You can use .splice() for this
 
 */
 
-function removeFlavorByName(/*code here*/){
-
-    /*code here*/
-
-}
+originalFlavors.splice(3, 1) 
+console.log(originalFlavors)
 
 
 /* Task 6: With all of these changes going on, we don't want to lose track of the actual, original 31 flavors.
@@ -145,7 +142,7 @@ function copy(/*code here*/){
 
     /*code here*/
 
-}
+}let newFlavors = [...originalFlavors]
 
 /* Task 7: July 7th is "World Chocolate Day" and Baskin Robins wants to create promotional materials highlighting
  all of their chocolate flavors. Write a function that checks every item in the array for a given string and 
