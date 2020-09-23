@@ -105,9 +105,10 @@ has been added successfully. */
 
 function getFlavorByIndex(originalFlavors){
 
-    console.log(originalFlavors[2])
+    console.log(originalFlavors[2]);
 
 }
+console.log(getFlavorByIndex(originalFlavors))
 
 /* Task 5: As corporate wants to add more and more flavors to their lineup, they've realized that they need 
 to remove flavors based on flavor name, as opposed to just arbitrarily removing the first or last flavor. 
