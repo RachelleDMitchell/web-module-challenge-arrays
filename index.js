@@ -103,12 +103,12 @@ Your function should accept:
 For example, getFlavorByIndex(originalFlavors, 2) would return "Black Walnut", assuming Rainbow Sherbert 
 has been added successfully. */
 
-function getFlavorByIndex(originalFlavors){
+function getFlavorByIndex(array, index){
 
-    console.log(originalFlavors[2]);
+    console.log(array[index]);
 
 }
-console.log(getFlavorByIndex(originalFlavors))
+console.log(getFlavorByIndex(originalFlavors[2]))
 
 /* Task 5: As corporate wants to add more and more flavors to their lineup, they've realized that they need 
 to remove flavors based on flavor name, as opposed to just arbitrarily removing the first or last flavor. 
@@ -126,8 +126,14 @@ Hint: You can use .splice() for this
 
 */
 
-originalFlavors.splice(3, 1) 
-console.log(originalFlavors)
+let getFlavorByName = (array, string) => {
+ 
+    return array.splice(array.indexOf(string), 1) 
+ 
+ }
+ 
+ console.log(getFlavorByName(originalFlavors, "Vanilla"))
+ console.log(originalFlavors)
 
 
 /* Task 6: With all of these changes going on, we don't want to lose track of the actual, original 31 flavors.
